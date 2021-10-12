@@ -1,3 +1,4 @@
+// Обычная функция
 const penSize = (yoursize) => {
   return 1.5 * yoursize;
 }
