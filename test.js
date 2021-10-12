@@ -1,3 +1,4 @@
+// Функция с условиями 
 const finalGrade = (exam, projects) => {
    
     if (exam > 90 || projects > 10) {
