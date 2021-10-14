@@ -3,7 +3,7 @@ const weakplayer = (KD) => {
     return (3 * 3) * square(KD);
 }
 
-const square = (num) => {
+const square = (num) => { // Функция первая выполнит вычисление, а потом передаст значение в первую функцию 
     return num * num; 
 } 
 
