@@ -10,6 +10,7 @@ const sequenceSum = (begin, end) => {
     return begin + sequenceSum(begin + 1, end);  
 };
 
+console.log (sequenceSum(1, -5)); // Функция выведет NaN, посмотрите по функции сами
 // Задача для меня была немного сложна, так как входных значения было два, а тема урока (курса, etc) была про вход с оодним значением.
 //const sequenceSum = (begin, end) => {
 //    if (begin == begin && end == end) {
