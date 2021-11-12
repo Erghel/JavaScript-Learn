@@ -45,3 +45,4 @@ const Pal = (color1, color2) => {
 }
 
 console.log(Pal("x", "y"))
+//
