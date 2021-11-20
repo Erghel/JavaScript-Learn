@@ -21,3 +21,14 @@ form.onsubmit = function(evt) {
   message.textContent = email.value;
 };
 // Выведет нам сверху над кнопкой вместо текста то, что мы ввели в поле ввода, в случае, как на курсе, это будет ваша почта
+
+
+
+let email = document.querySelector('.subscription-email');
+
+form.onsubmit = function(evt) {
+  evt.preventDefault();
+  // Измените значение textContent на следующей строке
+  message.textContent = 'Адрес ' + email.value + ' добавлен в список получателей рассылки.';
+};
+// Выведет текст с указанием вашей почты 
