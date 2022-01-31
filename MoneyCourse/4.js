@@ -9,7 +9,7 @@
 //     decr = 10;
 
 // incr++; // Postfix
-// decr--; // P
+// decr--; // Postfix
 
 // console.log(incr); // 11
 // console.log(decr); // 9
