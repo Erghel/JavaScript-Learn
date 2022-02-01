@@ -1,0 +1,13 @@
+git init - создает файл .git в котором мы будем прописываться все остальное
+
+git config --global user.name "Erghel" - называем нашего пользователя 
+
+git config --global user.mail example@gmail.com - даем ему почту
+
+git status - узнаем какие файлы отслеживаются, какие нет 
+
+git add -A/ example file - добавляем все в отслеживание или определнный файл
+
+git commit -a -m"ПИШЕМ ТУТ НАЗВАНИЕ КОММИТА"
+
+git push -u origin main - для добавление коммита в ветку, в моем случае в ветку main 
