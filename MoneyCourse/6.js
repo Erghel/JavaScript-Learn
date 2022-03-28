@@ -1,23 +1,39 @@
-const numberOfFilms = prompt("Сколько фильмов вы уже посмотрели?", ""); // Спрашиваем сколько фильмов мы уже посмотрели
+const numberOfFilms = prompt("Сколько фильмов вы уже посмотрели?", ""); // + - для работы с числами
 
 const personalMovieDB = { 
-    count: numberOfFilms, // записываем в объект число просмотренных нами фильмов
-    movies: {}, // пустой массив
-    actors: {}, // пустой массив
-    genres: [], // пустой массив 
+    count: numberOfFilms,
+    movies: {},
+    actors: {}, 
+    genres: [], 
     privat: false
     
 };
-// Зададим вопросы, которые потом передадим в созданные нами пустые массивы 
-const a = prompt("Один из последних просмотренных фильмов?", ""), 
-      b = prompt("На сколько оцените его?", ""),
-      c = prompt("Один из последних просмотренных фильмов?", ""), 
-      d = prompt("На сколько оцените его?", "");
 
-personalMovieDB.movies[a] = b; // присвоим категории movies в объекте значения, которые мы получил от пользователя
-personalMovieDB.movies[c] = d; // тоже самое
+for (let i = 0; i < 2; i++) { 
+    const a = prompt("Один из последних просмотренных фильмов?", ""), 
+          b = prompt("На сколько оцените его?", "");
+    
+    if (a != null && b != null && a != '' && b != '' && a.length < 50) { 
+        personalMovieDB.movies[a] = b;
+        console.log('Готово');
+    } else {
+        console.log('Ошибка');
+        i--;
+    }
+}
 
-console.log(personalMovieDB); // выводим в консоль 
+if (personalMovieDB.count < 10) { 
+    console.log('Просмотрено довольно мало фильмов!');
+} else if (personalMovieDB.count >= 10 && personalMovieDB <30) { 
+    console.log('Вы классический зритель');
+} else if (personalMovieDB.count >= 30) {
+    console.log('Вы киноман');
+} else {
+    console.log('Ошибка');
+}
+
+console.log(personalMovieDB);
+
 
 /* actors: Object {  }
 count: "2"
