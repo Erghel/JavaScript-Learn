@@ -1,12 +1,12 @@
 (function() {
 var isAndroid = /(android)/i.test(navigator.userAgent);
-if (!isAndroid) {
-document.getElementById('example').innerHTML = '<strong>You\'re not visiting from an Android device</strong>';
-return;
+  if (!isAndroid) {
+    document.getElementById('example').innerHTML = '<strong>You\'re not visiting from an Android device</strong>';
+  return;
 }
 
 function round2(num) {
-return +(Math.round(num + "e+2") + "e-2");
+  return +(Math.round(num + "e+2") + "e-2");
 }
 
 window.addEventListener('devicemotion', function(event) {
@@ -27,7 +27,7 @@ if (x !== null && y !== null && z !== null) {
 // 0.5 m/s2 in one of the axises
 if (Math.abs(x) > 0.5 || Math.abs(y) > 0.5 || Math.abs(z) > 0.5) {
 var el = document.getElementById('devicemotionOutput');
-el.innerHTML = JSON.stringify({
+ el.innerHTML = JSON.stringify({
 event: 'devicemotion',
 accelerationX: round2(x),
 accelerationY: round2(y),
