@@ -1,7 +1,7 @@
-// Скрипт для удаления iframe YouTube окон на страницах 
+// Скрипт для удаления iframe окон YouTube на страницах 
 let iframe = $("iframe");
 
-if(iframe.attr("src").split("youtube").length > 1) {
+if (iframe.attr("src").split("youtube").length > 1) {
   iframe.remove();
 }
 
