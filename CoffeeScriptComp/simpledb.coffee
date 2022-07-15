@@ -2,6 +2,7 @@ Info = ->
   name1 = prompt('Как тебя зовут?', '')
   age1 = prompt('Сколько тебе лет?', '')
   student1 = prompt('Ты учишься?', '')
+  # простая База Данных 
   info = 
     age: age1
     name: name1
