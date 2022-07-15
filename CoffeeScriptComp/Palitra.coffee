@@ -24,4 +24,5 @@ Pal = (color1, color2) ->
   else
     'Введите релевантное значение'
 
-console.log Pal('x', 'y')
+console.log Pal('к', 'к')
+# должен вывести Красный
